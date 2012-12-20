@@ -1,0 +1,9 @@
+name = Samsung 72 inch theme
+description = Theme used for the Samsung sales team contact form, developed by foresite.jo
+package = Foresite
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/style.css
+scripts[] = js/jquery-1.8.3.min.js
+scripts[] = js/scripts.css

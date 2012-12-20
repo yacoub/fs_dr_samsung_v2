@@ -1,0 +1,222 @@
+/************************/
+/*ZERO CSS*/
+/************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;}
+:focus {outline: 0;}
+body {color: black;background: white;}
+ol, ul {list-style: none;}
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+/**
+ * Basic definitions for the editing area.
+*/
+.Bold{font-weight: bold;}
+.Italic{font-style: italic;}
+.Underline{text-decoration: underline;}
+.StrikeThrough{text-decoration: line-through;}
+.Subscript{vertical-align: sub;font-size: smaller;}
+.Superscript{vertical-align: super;font-size: smaller;}
+/**
+ * Font faces.
+*/
+.FontComic{font-family: 'Comic Sans MS';}
+.FontCourier{font-family: 'Courier New';}
+.FontTimes{font-family: 'Times New Roman';}
+/**
+ * Font sizes.
+*/
+.FontSmaller{font-size: smaller;}
+.FontLarger{font-size: larger;}
+.FontSmall{font-size: 8pt;}
+.FontBig{font-size: 14pt;}
+.FontDouble{font-size: 200%;}
+/**
+ * Font colors.
+*/
+.FontColor1{color: #ff9900;}
+.FontColor2{color: #0066cc;}
+.FontColor3{color: #ff0000;}
+.FontColor1BG{background-color: #ff9900;}
+.FontColor2BG{background-color: #0066cc;}
+.FontColor3BG{background-color: #ff0000;}
+/**
+ * Indentation.
+*/
+.Indent1{margin-left: 40px;}
+
+.Indent2{margin-left: 80px;}
+
+.Indent3{margin-left: 120px;}
+/**
+ * Alignment.
+*/
+.JustifyLeft{text-align: left;}
+.JustifyRight{text-align: right;}
+.JustifyCenter{text-align: center;}
+.JustifyFull{text-align: justify;}
+/**
+ * Other.
+*/
+code
+{
+    font-family: courier, monospace;
+    background-color: #eeeeee;
+    padding-left: 1px;
+    padding-right: 1px;
+    border: #c0c0c0 1px solid;
+}
+kbd
+{
+    padding: 0px 1px 0px 1px;
+    border-width: 1px 2px 2px 1px;
+    border-style: solid;
+}
+blockquote{color: #6a6b6c; padding: 0px 20px; font-weight: bold;}
+/*Global*/
+
+body{
+    font-family: Tahoma, Geneva, sans-serif;;
+    font-size:10pt;
+}
+b, strong{
+    font-weight: bold;
+}
+a, a:link, a:visited, a:active { text-decoration: none; color: #1eb8cc; }
+a:hover {color: #006990; text-decoration: underline}
+.inline-block{
+    vertical-align: middle;
+    display: inline-block;
+    *zoom: 1; /* to trigger hasLayout in IE6-7 */
+    *display: inline; /* for IE6-7 */
+}
+.inline-block-top{
+    vertical-align: top;
+    display: inline-block;
+    *zoom: 1; /* to trigger hasLayout in IE6-7 */
+    *display: inline; /* for IE6-7 */
+}
+.inline-block-bottom{
+    vertical-align: bottom;
+    display: inline-block;
+    *zoom: 1; /* to trigger hasLayout in IE6-7 */
+    *display: inline; /* for IE6-7 */
+}
+/************************/
+/* End ZERO CSS*/
+/************************/
+.form-item, .form-actions {
+    margin: 0;
+}
+.element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+}
+.samsung-bg{
+    background-color: #dbcebb;
+    background: -moz-radial-gradient(center, ellipse cover,  #feefdf 0%, #dbc9b6 71%, #bba187 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#feefdf), color-stop(71%,#dbc9b6), color-stop(100%,#bba187)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #feefdf 0%,#dbc9b6 71%,#bba187 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #feefdf 0%,#dbc9b6 71%,#bba187 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #feefdf 0%,#dbc9b6 71%,#bba187 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #feefdf 0%,#dbc9b6 71%,#bba187 100%); /* W3C */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#header, #main-wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+#header{
+    background-image: url('../images/samsung_smart_tv_logo.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+
+.contact-page .content-card-wrapper{
+    position: relative;
+    height: 408px;
+}
+.contact-page .content-card-wrapper .content-card{
+    width: 587px;
+    height: 408px;
+    position: absolute;
+    top:0;
+    left: 107px;
+    background-image: url('../images/smart-tv-rose2.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #D3C2AE
+}
+.contact-page .content-card-wrapper .content-card .content-card-padding{
+    padding: 40px 20px;
+    padding-bottom: 0;
+    position: relative;
+    text-align: center;
+}
+
+.contact-page .content-card-wrapper .content-card .form-item input[type=text]{
+    margin: 0;
+    border: 0 none;
+    background-color: fuchsia;
+}
+#start_btn{
+    background-position: -118px -2px;
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+    width: 80px;
+}
+#start_btn:hover{
+    background-position: -118px -102px;
+}
+#next_btn{
+        background-position: -58px 0px;
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    width: 35px; 
+    position: absolute;
+    right: 36px;
+    top: 150px;
+}
+#next_btn:hover{
+    background-position: -58px -100px; 
+}
+#prev_btn{
+        background-position: 0px 0px;
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    width: 35px; 
+    position: absolute;
+    left: 36px;
+    top: 150px;
+}
+#prev_btn:hover{
+    background-position: 0px -100px; 
+}
+.sprite1{
+    background-image: url('../images/sprite.png');
+}
