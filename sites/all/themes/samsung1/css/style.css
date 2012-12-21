@@ -148,10 +148,12 @@ a:hover {color: #006990; text-decoration: underline}
     margin: 0 auto;
 }
 #header{
-    background-image: url('../images/samsung_smart_tv_logo.png');
-    background-position: center right;
-    background-repeat: no-repeat;
     padding-top: 40px;
+}
+#header .section{
+    background-image: url('../images/samsung_smart_tv_logo.png');
+    background-position: 650px 6px;
+    background-repeat: no-repeat;  
 }
 
 .contact-page .content-card-wrapper{
