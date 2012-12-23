@@ -1,3 +1,4 @@
+<?php $flag = "no"; ?>
 <div id="header"><div class="section clearfix">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
             <img src="<?php echo base_path() . path_to_theme(); ?>/logo.png" alt="<?php print t('Home'); ?>" width="155" height="55"/>
@@ -14,39 +15,47 @@
                                     if ($node->type == "webform"):
                                         ?>
                                         <div class="form_bg content-card-padding">
-                                        <?php print render($page['content']); ?>
+                                            <?php print render($page['content']); ?>
                                         </div>
-                                        <?php else: ?>
+                                    <?php else: ?>
                                         <div class="content-card-padding">
-                                        <?php print render($page['content']); ?>
+                                            <?php print render($page['content']); ?>
                                         </div>
-                            <?php endif; ?>
+                                <?php endif; ?>
                             </div>
                             <?php if (isset($node->field_next_link["und"])): ?>
                                 <a href="<?php print $node->field_next_link["und"][0]["value"] ?>" id="next_btn" class="sprite1"></a>
                             <?php endif; ?>
                             <?php if (isset($node->field_prev_link["und"])): ?>
                                 <a href="<?php print $node->field_prev_link["und"][0]["value"] ?>" id="prev_btn" class="sprite1"></a>
-<?php endif; ?>
+                            <?php endif; ?>
                         </div>
+                        <?php if (isset($messages)): ?>
+                        <?php if (!empty($messages)): ?>
+                        
+                            <?php $flag = "yes"; ?>
 
-                        <?php if(isset($messages)): ?>
-                        <div class="overlay" id="overlay" style="display:none;"></div>
-                        <div class="box" id="msg-box">
-                            <a class="boxclose" id="msgboxclose"></a>
-                            <h1 class="msg-title">
-
-                            </h1>
-                            <div class="vSpace10"></div>
-                            <p class="msg-body">
-                                  <?php print $messages; ?>
-                            </p>
-                            <div class="vSpace10"></div>
-                            <p class="msg-action">
-                                <a href="#close" class="inline-block close-button"><?php echo ($lang == "ar" ? "إغلاق" : "Close"); ?></a>
-                            </p>
-                        </div> 
+                            <div class="overlay" id="overlay" style="display:none;"></div>
+                            <div class="box" id="msg-box">
+                                <a class="boxclose" id="msgboxclose"></a>
+                                <h1 class="msg-title">
+                                    Error
+                                </h1>
+                                <div class="vSpace10"></div>
+                                <p class="msg-body">
+                                    <?php print $messages; ?>
+                                </p>
+                                <div class="vSpace10"></div>
+                                <p class="msg-action">
+                                    <a href="#close" class="inline-block close-button">Close</a>
+                                </p>
+                            </div> 
+                            <?php endif; ?>
                         <?php endif; ?>
+                        <script type="text/javascript">
+                            flag = "<?php print $flag ?>";
+                        </script>
+
 
 
 
@@ -60,7 +69,7 @@
                                 <?php print render($page['help']); ?>
                                 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>                                    
                             <?php endif; ?>
-<?php endif; ?>
+                        <?php endif; ?>
                     </div></div> <!-- /.section, /#content -->
 
             </div></div> <!-- /#main, /#main-wrapper -->
@@ -70,3 +79,4 @@
     </div></div> <!-- /#page, /#page-wrapper -->
 <script type="text/javascript" src="<?php print base_path() . path_to_theme(); ?>/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="<?php print base_path() . path_to_theme(); ?>/js/script.js"></script>
+
