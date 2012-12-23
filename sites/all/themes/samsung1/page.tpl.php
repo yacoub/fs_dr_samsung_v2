@@ -9,27 +9,24 @@
                         <a id="main-content"></a>
                         <div class="content-card-wrapper">
                             <div class="content-card">
-                                <div class="content-card-padding" >
-                                    <p style="padding-top: 75px;">
-                                    <img src="<?php echo base_path() . path_to_theme(); ?>/images/card_a-text_1.png" alt="<?php print t('Home'); ?>" width="355" height="65"/>
-                                    </p>
-                                    <p style="padding-top: 35px;">
-                                    <a href="#start" id="start_btn" class="sprite1"></a>
-                                    </p>
-                                </div>
+                                <?php
+                                if(isset($node))
+                                if ($node->type == "webform"): ?>
+                                    <div class="form_bg content-card-padding">
+                                        <?php print render($page['content']); ?>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="content-card-padding">
+                                        <?php print render($page['content']); ?>
+                                    </div>
+                                <?php endif; ?>
                             </div>
-                            <div class="content-card" style="display: none;">
-                                <div class="content-card-padding">
-                                    <img src="<?php echo base_path() . path_to_theme(); ?>/images/card_b-text_1.png" alt="<?php print t('Home'); ?>" width="155" height="55"/>
-                                </div>
-                            </div>
-                            <div class="content-card" style="display: none;">
-                                <div class="content-card-padding">
-                                    <?php print render($page['content']); ?>
-                                </div>
-                            </div>
-                            <a href="#next" id="next_btn" class="sprite1"></a>
-                            <a href="#prev" id="prev_btn" class="sprite1"></a>
+                            <?php if (isset($node->field_next_link["und"])): ?>
+                            <a href="<?php print $node->field_next_link["und"][0]["value"] ?>" id="next_btn" class="sprite1"></a>
+                            <?php endif; ?>
+                            <?php if (isset($node->field_prev_link["und"])): ?>
+                                <a href="<?php print $node->field_prev_link["und"][0]["value"] ?>" id="prev_btn" class="sprite1"></a>
+                            <?php endif; ?>
                         </div>
                         <?php if (isset($user->uid)): ?>
                             <?php if ($user->uid != 0): ?>
