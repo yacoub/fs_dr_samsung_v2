@@ -178,11 +178,11 @@ a:hover {color: #006990; text-decoration: underline}
     text-align: center;
 }
 
-.contact-page .content-card-wrapper .content-card .form-item input[type=text]{
+.contact-page .content-card-wrapper .content-card #webform-client-form-1 .form-item input[type=text]{
     margin: 0;
     border: 0 none;
 }
-.contact-page .content-card-wrapper .content-card .form-item input[type=text].error{
+.contact-page .content-card-wrapper .content-card #webform-client-form-1 .form-item input[type=text].error{
     border: red 1px solid;
 }
 #start_btn{
@@ -237,35 +237,37 @@ a:hover {color: #006990; text-decoration: underline}
 #webform-component-your-name,#webform-component-mobile-no,#webform-component-address,#webform-component-address-2,#webform-component-visit-date,#webform-component-visit-time,#edit-actions{
     position: absolute;
 }
-#webform-component-your-name input,#webform-component-mobile-no input,#webform-component-address input{
+#webform-client-form-1 #webform-component-your-name input,
+#webform-client-form-1 #webform-component-mobile-no input,
+#webform-client-form-1 #webform-component-address input{
     height: 20px;
     width: 226px;
     background-color: transparent;
     color: #ffffff;
 }
-#webform-component-address-2 input{
+#webform-client-form-1 #webform-component-address-2 input{
     height: 20px;
     width: 295px;
     background-color: transparent;
     color: #ffffff;
 }
-#webform-component-your-name{
+#webform-client-form-1 #webform-component-your-name{
     left: 205px;
     top: 71px;
 }
-#webform-component-mobile-no{
+#webform-client-form-1 #webform-component-mobile-no{
     left: 205px;
     top: 99px;;
 }
-#webform-component-address{
+#webform-client-form-1 #webform-component-address{
     left: 205px;
     top: 128px;;
 }
-#webform-component-address-2{
+#webform-client-form-1 #webform-component-address-2{
     left: 135px;
     top: 156px;
 }
-#webform-component-visit-date{
+#webform-client-form-1 #webform-component-visit-date{
     left: 165px;
     top: 234px;
 }
@@ -273,11 +275,11 @@ a:hover {color: #006990; text-decoration: underline}
     left: 165px;
     top: 268px;
 }
-#edit-actions{
+ #webform-client-form-1 #edit-actions{
     left: 442px;
     top: 224px;
 }
-#edit-actions input{
+ #webform-client-form-1 #edit-actions input[type=submit]{
     font-size: 0px;
     border: none;
     background-image: url('../images/card_c-text_2.png');
@@ -287,10 +289,10 @@ a:hover {color: #006990; text-decoration: underline}
     height: 82px;
     cursor: pointer;
 }
-#edit-actions input:hover{
+ #webform-client-form-1 #edit-actions input[type=submit]:hover{
     background-position: 0px -100px; 
 }
-.webform-container-inline label{
+ #webform-client-form-1 .webform-container-inline label{
     margin-right: 0;   
 }
 .overlay{
