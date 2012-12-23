@@ -225,7 +225,7 @@ a:hover {color: #006990; text-decoration: underline}
 .form_bg{
     background-image: url('../images/card_c-text_1.png');
     background-repeat: no-repeat;
-    background-position: 27px 45px;
+    background-position: 127px 45px;
     height: 240px;
 }
 .sprite1{
@@ -237,37 +237,41 @@ a:hover {color: #006990; text-decoration: underline}
 #webform-component-your-name input,#webform-component-mobile-no input,#webform-component-address input{
     height: 20px;
     width: 226px;
+    background-color: transparent;
+    color: #ffffff;
 }
 #webform-component-address-2 input{
     height: 20px;
     width: 295px;
+    background-color: transparent;
+      color: #ffffff;
 }
 #webform-component-your-name{
-    left: 105px;
+    left: 205px;
     top: 51px;
 }
 #webform-component-mobile-no{
-    left: 105px;
+    left: 205px;
     top: 79px;;
 }
 #webform-component-address{
-    left: 105px;
+    left: 205px;
     top: 108px;;
 }
 #webform-component-address-2{
-    left: 35px;
+    left: 135px;
     top: 136px;
 }
 #webform-component-visit-date{
-    left: 81px;
+    left: 170px;
     top: 214px;
 }
 #webform-component-visit-time{
-    left: 81px;
+    left: 170px;
     top: 248px;
 }
 #edit-actions{
-  left: 408px;
+  left: 442px;
     top: 207px;
 }
 #edit-actions input{
@@ -282,4 +286,7 @@ a:hover {color: #006990; text-decoration: underline}
 }
 #edit-actions input:hover{
    background-position: 0px -100px; 
+}
+.webform-container-inline label{
+ margin-right: 0;   
 }
