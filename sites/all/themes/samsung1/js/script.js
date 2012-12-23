@@ -18,7 +18,7 @@ function SubInit(msgTitle, msgBody){
             },500);
         });
     });
-    $('.box .boxclose').click(function(e){
+    $('.box .boxclose, .box .close-button').click(function(e){
         e.preventDefault();
         $('.box').animate({
             'top':'-400px'
