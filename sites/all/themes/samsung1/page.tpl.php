@@ -5,6 +5,8 @@ $errorlist[] = array("NAME field is required", "Please fill in your name.");
 $errorlist[] = array("MOBILE# field is required", "Please fill in your mobile number so we can contact you. Thank you");
 $errorlist[] = array("ADDRESS field is required", "Please fill in your address. Thank you");
 $errorlist[] = array("The entered date must be 23 Dec 2012 or later.", "You entered an invalid date, Please correct the date field by selecting a date in the future. Thank you");
+$errorlist[] = array('VISIT TIME</em> field is required', "Please choose an hour.");
+$errorlist[] = array('VISIT DATE field is required', "Please choose an hour.");
 ?>
 <div id="header"><div class="section clearfix">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
