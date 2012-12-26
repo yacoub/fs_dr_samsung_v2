@@ -2,9 +2,9 @@
 $flag = "no";
 $errorlist = array();
 $errorlist[] = array("NAME field is required", "Please fill in your name.");
-$errorlist[] = array("MOBILE# field is required", "Please fill in your mobile number so we can contact you. Thank you");
-$errorlist[] = array("ADDRESS field is required", "Please fill in your address. Thank you");
-$errorlist[] = array("The entered date must be 23 Dec 2012 or later.", "You entered an invalid date, Please correct the date field by selecting a date in the future. Thank you");
+$errorlist[] = array("MOBILE# field is required", "Please fill in your mobile number so we can contact you.");
+$errorlist[] = array("ADDRESS field is required", "Please fill in your address.");
+$errorlist[] = array("The entered date must be 23 Dec 2012 or later.", "You entered an invalid date, Please correct the date field by selecting a date in the future.");
 $errorlist[] = array('VISIT TIME</em> field is required', "Please choose an hour.");
 $errorlist[] = array('VISIT DATE field is required', "Please choose an hour.");
 ?>
@@ -39,6 +39,7 @@ $errorlist[] = array('VISIT DATE field is required', "Please choose an hour.");
                                     <a href="<?php print $node->field_prev_link["und"][0]["value"] ?>" id="prev_btn" class="sprite1"></a>
                                 <?php endif; ?>
                             </div>
+                        <div class="footer_text">For best viewing experience, hold your tab in landscape position</div>
                         <?php else: ?>
                             <div class="system-page">
                                 <?php print render($page['content']); ?>
@@ -62,7 +63,7 @@ $errorlist[] = array('VISIT DATE field is required', "Please choose an hour.");
                                     <div class="box" id="msg-box">
                                         <a class="boxclose" id="msgboxclose"></a>
                                         <h1 class="msg-title">
-                                            Error (Some of the fields are missing or invalid)
+                                           Attention: some fields are missing or invalid
                                         </h1>
                                         <div class="vSpace10"></div>
                                         <p class="msg-body">
