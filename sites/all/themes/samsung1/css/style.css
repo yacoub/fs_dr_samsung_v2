@@ -373,6 +373,19 @@ a.yes-button:hover,a.no-button:hover {
 }
 .footer_text{
     font-size: 1.4em;
-    margin: 20px 0px;
+    margin: 0px 0px;
     text-align: center;
+}
+.samsung-callcenter{
+    background-image: url("../images/sprite.png");
+    background-position: 1px -250px;
+    background-repeat: no-repeat;
+    height: 95px;
+    position: absolute;
+    right: 5px;
+    top: 333px;
+    width: 95px;
+}
+.page-node-2 .samsung-callcenter{
+    display: none;
 }
