@@ -1,6 +1,8 @@
-<?php include 'detect_device.php';
-$flag = "no"; ?>
-<div id="header">
+<?php
+include 'detect_device.php';
+$flag = "no";
+?>
+<div id="header" class="header-mobile-<?php echo $mobileDevice; ?>">
     <div class="section clearfix">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
             <img src="<?php echo base_path() . path_to_theme(); ?>/logo.png" alt="<?php print t('Home'); ?>" width="155" height="55"/>
@@ -17,7 +19,7 @@ $flag = "no"; ?>
                         <div class="content-card-wrapper">
                             <div class="content-card">
                                 <div class="content-card-padding">
-<?php print render($page['content']); ?>
+                                    <?php print render($page['content']); ?>
                                 </div>
                             </div>
                             <?php if (isset($node->field_next_link["und"])): ?>
@@ -25,12 +27,12 @@ $flag = "no"; ?>
                             <?php endif; ?>
                             <?php if (isset($node->field_prev_link["und"])): ?>
                                 <a href="<?php print $node->field_prev_link["und"][0]["value"] ?>" id="prev_btn" class="sprite1"></a>
-<?php endif; ?>
+                            <?php endif; ?>
                             <div class="samsung-callcenter">
 
                             </div>
                         </div>
-<?php if ($iPod || $iPhone || ($iPad) || ($Android) || ($AndroidTablet) || ($webOS) || ($BlackBerry) || ($RimTablet)): ?>
+                        <?php if ($mobileDevice): ?>
                             <div class="footer_text">
                                 <img alt="For best viewing experience, hold your tab in landscape position" src="<?php echo base_path() . path_to_theme(); ?>/images/tab.png"/>
                             </div>
@@ -45,7 +47,7 @@ $flag = "no"; ?>
                                 <?php print render($page['help']); ?>
                                 <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>                                    
                             <?php endif; ?>
-<?php endif; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

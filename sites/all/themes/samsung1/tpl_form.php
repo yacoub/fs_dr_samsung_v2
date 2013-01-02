@@ -3,7 +3,7 @@
 include 'detect_device.php';
 $flag = "no";
 ?>
-<div id="header">
+<div id="header" class="header-mobile-<?php echo $mobileDevice; ?>">
     <div class="section clearfix">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
             <img src="<?php echo base_path() . path_to_theme(); ?>/logo.png" alt="<?php print t('Home'); ?>" width="155" height="55"/>
@@ -33,7 +33,7 @@ $flag = "no";
 
                             </div>
                         </div>
-                        <?php if ($iPod || $iPhone || ($iPad) || ($Android) || ($AndroidTablet) || ($webOS) || ($BlackBerry) || ($RimTablet)): ?>
+                        <?php if ($mobileDevice): ?>
                             <div class="footer_text">
                                 <img alt="For best viewing experience, hold your tab in landscape position" src="<?php echo base_path() . path_to_theme(); ?>/images/tab.png" />
                             </div>

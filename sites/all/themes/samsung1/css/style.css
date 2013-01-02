@@ -150,6 +150,9 @@ a:hover {color: #006990; text-decoration: underline}
 #header{
     padding-top: 40px;
 }
+#header.header-mobile-yes{
+    padding-top: 0px;
+}
 #header .section{
     background-image: url('../images/samsung_smart_tv_logo.png');
     background-position: 650px 6px;
